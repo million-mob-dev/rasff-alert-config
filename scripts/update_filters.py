@@ -61,54 +61,44 @@ def fetch_live_filters():
 def main():
     live_filters = fetch_live_filters()
     
-    with open('rasff_filters_en.json', 'r', encoding='utf-8') as f:
-        local_en = json.load(f)
-    with open('rasff_filters_pt.json', 'r', encoding='utf-8') as f:
-        local_pt = json.load(f)
+    try:
+        with open('rasff_filters.json', 'r', encoding='utf-8') as f:
+            local_filters = json.load(f)
+    except FileNotFoundError:
+        local_filters = {}
 
     changed = False
     
     for category, new_data in live_filters.items():
-        if category not in local_en:
-            local_en[category] = {}
-        if category not in local_pt:
-            local_pt[category] = {}
+        if category not in local_filters:
+            local_filters[category] = {}
+            changed = True
             
-        # 1. Adicionar novos ou atualizar EN
+        # Adicionar ou atualizar chaves
         for key, value in new_data.items():
-            if key not in local_en[category] or local_en[category][key] != value:
-                local_en[category][key] = value
-                changed = True
-            
-            # 2. Injetar no PT apenas se o ID nao existir (preservando as tuas traducoes)
-            pt_ids = list(local_pt[category].values())
-            if value not in pt_ids:
-                local_pt[category][key] = value
+            if key not in local_filters[category] or local_filters[category][key] != value:
+                local_filters[category][key] = value
                 changed = True
                 
-        # 3. Remover chaves velhas do EN
-        for key in list(local_en[category].keys()):
+        # Remover chaves que já não existem
+        for key in list(local_filters[category].keys()):
             if key not in new_data:
-                del local_en[category][key]
+                del local_filters[category][key]
                 changed = True
                 
-        # 4. Remover do PT as chaves cujos IDs já não existem na API oficial
-        live_ids = list(new_data.values())
-        for pt_key in list(local_pt[category].keys()):
-            if local_pt[category][pt_key] not in live_ids:
-                del local_pt[category][pt_key]
-                changed = True
-                
-        # Ordenar dicionários no final para ficarem limpos no git
-        local_en[category] = dict(sorted(local_en[category].items()))
-        local_pt[category] = dict(sorted(local_pt[category].items()))
+        # Ordenar dicionários no final
+        local_filters[category] = dict(sorted(local_filters[category].items()))
 
     if changed:
-        print("Alterações detetadas! A atualizar JSONs...")
-        with open('rasff_filters_en.json', 'w', encoding='utf-8') as f:
-            json.dump(local_en, f, indent=2, ensure_ascii=False)
-        with open('rasff_filters_pt.json', 'w', encoding='utf-8') as f:
-            json.dump(local_pt, f, indent=2, ensure_ascii=False)
+        print("Alterações detetadas! A atualizar o JSON global...")
+        with open('rasff_filters.json', 'w', encoding='utf-8') as f:
+            json.dump(local_filters, f, indent=2, ensure_ascii=False)
+            
+        # Limpar ficheiros antigos (ignoramos erros se já não existirem)
+        import os
+        for old_file in ['rasff_filters_en.json', 'rasff_filters_pt.json']:
+            if os.path.exists(old_file):
+                os.remove(old_file)
     else:
         print("Tudo atualizado. Nenhuma alteração na API.")
 
