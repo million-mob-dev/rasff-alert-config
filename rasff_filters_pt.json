@@ -1,0 +1,32 @@
+{
+  "notifyingCountries": {
+    "Áustria": 5,"Bélgica": 7,"Bulgária": 10,"Croácia": 36,"Chipre": 12,"Chéquia": 37,"Dinamarca": 53,"ECDC": 17777,"Membro EFSA": 526,"Autoridade de Vigilância EFTA": 29,"Estónia": 58,"Comissão Europeia": 1,"Europol": 17164,"Finlândia": 21,"França": 14,"Alemanha": 3,"Grécia": 55,"Hungria": 52,"Islândia": 56,"Irlanda": 57,"Itália": 9,"Letónia": 24,"Listenstaine": 60,"Lituânia": 61,"Luxemburgo": 18,"Malta": 19,"Países Baixos": 38,"Noruega": 4,"OLAF": 17775,"Polónia": 31,"Portugal": 27,"Roménia": 42,"Eslováquia": 54,"Eslovénia": 59,"Espanha": 2,"Suécia": 62,"Suíça": 63
+  },
+  "countries": {
+    "Afeganistão": 5035,"Albânia": 5036,"Argélia": 5037,"Angola": 5040,"Argentina": 5044,"Arménia": 5045,"Austrália": 5047,"Áustria": 5001,"Azerbaijão": 5048,"Bangladeche": 5051,"Bélgica": 5002,"Brasil": 5062,"Bulgária": 5003,"Canadá": 5069,"Chile": 5074,"China": 5075,"Colômbia": 5078,"Croácia": 5016,"Cuba": 5085,"Chipre": 5005,"Chéquia": 5006,"Dinamarca": 5008,"Egito": 5090,"Estónia": 5009,"Etiópia": 5094,"Finlândia": 5012,"França": 5013,"Alemanha": 5007,"Gana": 5104,"Grécia": 5015,"Hungria": 5017,"Islândia": 5019,"Índia": 5118,"Indonésia": 5119,"Irão": 5120,"Iraque": 5121,"Irlanda": 5018,"Israel": 5122,"Itália": 5020,"Japão": 5125,"Cazaquistão": 5127,"Quénia": 5128,"Cosovo": 5250,"Kuwait": 5132,"Letónia": 5024,"Líbano": 5135,"Líbia": 5138,"Listenstaine": 5021,"Lituânia": 5022,"Luxemburgo": 5023,"Malásia": 5143,"Malta": 5025,"México": 5151,"Moldávia": 5153,"Marrocos": 5158,"Moçambique": 5159,"Países Baixos": 5026,"Nova Zelândia": 5166,"Nigéria": 5169,"Coreia do Norte": 5130,"Noruega": 5027,"Paquistão": 5174,"Peru": 5180,"Filipinas": 5181,"Polónia": 5028,"Portugal": 5029,"Roménia": 5030,"Rússia": 5186,"Arábia Saudita": 5198,"Senegal": 5199,"Sérvia": 5200,"Singapura": 5203,"Eslováquia": 5033,"Eslovénia": 5032,"Somália": 5205,"África do Sul": 5206,"Coreia do Sul": 5131,"Sudão do Sul": 17681,"Espanha": 5010,"Sri Lanca": 5207,"Sudão": 5208,"Suécia": 5031,"Suíça": 5004,"Síria": 5212,"Taiwan": 5213,"Tanzânia": 5215,"Tailândia": 5216,"Timor-Leste": 5217,"Togo": 5218,"Tunísia": 5222,"Turquia": 5223,"Uganda": 5227,"Ucrânia": 5228,"Emirados Árabes Unidos": 5229,"Reino Unido": 5014,"Reino Unido (Irlanda do Norte)": 5000,"Estados Unidos": 5230,"Uruguai": 5232,"Venezuela": 5236,"Vietname": 5237,"Iémen": 5242,"Zâmbia": 5243,"Zimbabué": 5244
+  },
+  "productCategories": {
+    "bebidas alcoólicas": 18431,"subprodutos animais": 19025,"moluscos bivalves": 18432,"cefalópodes": 18433,"cereais e padaria": 18434,"cacau, café e chá": 18435,"alimentos compostos": 18436,"confeitaria": 18437,"crustáceos": 18438,"suplementos e dietéticos": 18439,"ovos e derivados": 18440,"gorduras e óleos": 18441,"aditivos para rações": 18442,"matérias-primas para rações": 18443,"peixe e derivados": 18445,"aditivos alimentares e aromas": 18446,"materiais em contacto com alimentos": 18447,"frutas e vegetais": 18448,"gastrópodes": 18449,"ervas e especiarias": 18450,"mel e geleia real": 18451,"gelados e sobremesas": 18452,"animais vivos": 20007,"carne e produtos cárneos": 18453,"leite e laticínios": 18454,"águas minerais naturais": 18455,"bebidas não alcoólicas": 18426,"frutos de casca rija e sementes": 18427,"outros alimentos / mistos": 18428,"comida para animais estimação": 18429,"produtos fitofarmacêuticos": 27284,"carne de aves": 18430,"pratos preparados e snacks": 18456,"sopas e molhos": 18457,"vinho": 18459
+  },
+  "hazardCategories": {
+    "OGM / novos alimentos": 21806,"ESTs (TSEs)": 21789,"adulteração / fraude": 21797,"alergenios": 21798,"contaminantes biológicos": 21782,"biotoxinas": 21802,"contaminação química": 21786,"composição": 21793,"poluentes ambientais": 26845,"aditivos": 21792,"corpos estranhos": 21787,"metais pesados": 21783,"contaminantes industriais": 21790,"rotulagem incorreta": 21794,"migração": 21784,"micotoxinas": 21800,"toxinas naturais": 26602,"micro-organismos não patogénicos": 21804,"aspetos organoléticos": 21807,"embalagem defeituosa": 21788,"infestação parasitária": 21785,"micro-organismos patogénicos": 21801,"resíduos de pesticidas": 21795,"controlos insuficientes": 21799,"radiação": 21791,"resíduos de medicamentos veterinários": 21796
+  },
+  "riskDecisions": {
+    "sem risco": 18763,"não grave": 18762,"risco potencial": 20042,"potencialmente grave": 20060,"grave": 18761
+  },
+  "notificationClassifications": {
+    "alerta": 306,"rejeição na fronteira": 305,"informação para atenção": 304,"informação para acompanhamento": 303,"notícias": 302,"não conformidade": 301
+  },
+  "actionTaken": {
+    "destruição": 18700,"recuperação do mercado": 18836,"aviso público": 18838,"re-expedição": 18702,"detenção oficial": 18839,"retirada do mercado": 18837,"recusa de entrada": 18703,"tratamento especial": 18701
+  },
+  "notificationTypes": {
+    "animais": 284,"rações": 282,"alimentos": 283,"materiais contacto": 281,"outro": 286
+  },
+  "notificationBasis": {
+    "controlo na fronteira": 18420,"autocontrolo da empresa": 18423,"queixa do consumidor": 18683,"intoxicação alimentar": 18424,"controlo oficial no mercado": 18444
+  },
+  "notificationStatus": {
+    "Validado pela CE": 1,"Retirado pela CE": 2
+  }
+}
